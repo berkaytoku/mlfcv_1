@@ -1,1 +1,1 @@
-# mlfcv_1
+Learning to classify handwritten digits using SVM, Decision Tree, Random Forests algorithms from scikit-learn package
