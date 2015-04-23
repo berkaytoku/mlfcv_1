@@ -27,7 +27,7 @@ def parse_label_data(filename, count=60000):
         magicnumber = struct.unpack('>I', byte)[0]
         byte = f.read(4)
         numitems = struct.unpack('>I', byte)[0]
-        count = 0 if count <= 0 else min(numitems, count)
+        count = 60000 if count <= 0 else min(numitems, count)
         labelarray = []
         for i in range(0, count):
             labelarray.append(struct.unpack('>B', f.read(1))[0])
